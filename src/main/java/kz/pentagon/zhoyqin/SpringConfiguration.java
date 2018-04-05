@@ -15,8 +15,8 @@ public class SpringConfiguration {
 	@Bean
 	public JaxWsPortProxyFactoryBean spitterService() throws MalformedURLException {
 		JaxWsPortProxyFactoryBean proxy = new JaxWsPortProxyFactoryBean();
-		proxy.setWsdlDocumentUrl( new URL("http://localhost:8888/services/CalculatorImpl?wsdl"));
-		proxy.setServiceName("CalculatorImplService");
+		proxy.setWsdlDocumentUrl( new URL("http://localhost:8888/services/CalculatorService?wsdl"));
+		proxy.setServiceName("CalculatorService");
 		proxy.setPortName("CalculatorImplPort");
 		proxy.setServiceInterface(CalculatorI.class);
 		proxy.setNamespaceUri("http://demo.example.com/");

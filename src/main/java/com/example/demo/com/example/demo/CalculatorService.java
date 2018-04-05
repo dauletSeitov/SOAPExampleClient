@@ -17,48 +17,48 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "CalculatorImplService", targetNamespace = "http://demo.example.com/", wsdlLocation = "http://localhost:8888/services/CalculatorImpl?wsdl")
-public class CalculatorImplService
+@WebServiceClient(name = "CalculatorService", targetNamespace = "http://demo.example.com/", wsdlLocation = "http://localhost:8888/services/CalculatorService?wsdl")
+public class CalculatorService
     extends Service
 {
 
-    private final static URL CALCULATORIMPLSERVICE_WSDL_LOCATION;
-    private final static WebServiceException CALCULATORIMPLSERVICE_EXCEPTION;
-    private final static QName CALCULATORIMPLSERVICE_QNAME = new QName("http://demo.example.com/", "CalculatorImplService");
+    private final static URL CALCULATORSERVICE_WSDL_LOCATION;
+    private final static WebServiceException CALCULATORSERVICE_EXCEPTION;
+    private final static QName CALCULATORSERVICE_QNAME = new QName("http://demo.example.com/", "CalculatorService");
 
     static {
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://localhost:8888/services/CalculatorImpl?wsdl");
+            url = new URL("http://localhost:8888/services/CalculatorService?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
-        CALCULATORIMPLSERVICE_WSDL_LOCATION = url;
-        CALCULATORIMPLSERVICE_EXCEPTION = e;
+        CALCULATORSERVICE_WSDL_LOCATION = url;
+        CALCULATORSERVICE_EXCEPTION = e;
     }
 
-    public CalculatorImplService() {
-        super(__getWsdlLocation(), CALCULATORIMPLSERVICE_QNAME);
+    public CalculatorService() {
+        super(__getWsdlLocation(), CALCULATORSERVICE_QNAME);
     }
 
-    public CalculatorImplService(WebServiceFeature... features) {
-        super(__getWsdlLocation(), CALCULATORIMPLSERVICE_QNAME, features);
+    public CalculatorService(WebServiceFeature... features) {
+        super(__getWsdlLocation(), CALCULATORSERVICE_QNAME, features);
     }
 
-    public CalculatorImplService(URL wsdlLocation) {
-        super(wsdlLocation, CALCULATORIMPLSERVICE_QNAME);
+    public CalculatorService(URL wsdlLocation) {
+        super(wsdlLocation, CALCULATORSERVICE_QNAME);
     }
 
-    public CalculatorImplService(URL wsdlLocation, WebServiceFeature... features) {
-        super(wsdlLocation, CALCULATORIMPLSERVICE_QNAME, features);
+    public CalculatorService(URL wsdlLocation, WebServiceFeature... features) {
+        super(wsdlLocation, CALCULATORSERVICE_QNAME, features);
     }
 
-    public CalculatorImplService(URL wsdlLocation, QName serviceName) {
+    public CalculatorService(URL wsdlLocation, QName serviceName) {
         super(wsdlLocation, serviceName);
     }
 
-    public CalculatorImplService(URL wsdlLocation, QName serviceName, WebServiceFeature... features) {
+    public CalculatorService(URL wsdlLocation, QName serviceName, WebServiceFeature... features) {
         super(wsdlLocation, serviceName, features);
     }
 
@@ -85,10 +85,10 @@ public class CalculatorImplService
     }
 
     private static URL __getWsdlLocation() {
-        if (CALCULATORIMPLSERVICE_EXCEPTION!= null) {
-            throw CALCULATORIMPLSERVICE_EXCEPTION;
+        if (CALCULATORSERVICE_EXCEPTION!= null) {
+            throw CALCULATORSERVICE_EXCEPTION;
         }
-        return CALCULATORIMPLSERVICE_WSDL_LOCATION;
+        return CALCULATORSERVICE_WSDL_LOCATION;
     }
 
 }
