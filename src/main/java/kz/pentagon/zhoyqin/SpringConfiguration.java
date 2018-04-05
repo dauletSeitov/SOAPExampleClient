@@ -9,9 +9,11 @@ import org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean;
 
 import com.example.demo.CalculatorI;
 
+//import com.example.demo.CalculatorI;
+
 @Configuration
 public class SpringConfiguration {
-
+  
 	@Bean
 	public JaxWsPortProxyFactoryBean spitterService() throws MalformedURLException {
 		JaxWsPortProxyFactoryBean proxy = new JaxWsPortProxyFactoryBean();
